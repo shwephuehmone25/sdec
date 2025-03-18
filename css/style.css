@@ -156,6 +156,7 @@ h6,
     font-size: 16px;
     font-weight: 600;
     transition: .5s;
+    text-transform: uppercase;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -203,8 +204,21 @@ h6,
     opacity: 1;
 }
 
-#searchModal .modal-content {
-    background: rgba(255, 255, 255, .8);
+.container.topbar.bg-primary {
+    background-color: #18b8a8 !important;
+}
+
+.navbar-brand h1 {
+    color: #18b8a8  !important;
+}
+
+.container-fluid.border-bottom.bg-light {
+    background-color: rgba(31, 39, 43, 0.75);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: #18b8a8  !important;
 }
 /*** Navbar End ***/
 
@@ -225,7 +239,7 @@ h6,
     position: relative;
     height: 100%;
     min-height: 400px;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images//early/about.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../images/early/about.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -908,7 +922,7 @@ h6,
 }
 
 .blog-item a:hover {
-  color: #007bff; /* Change text color on hover */
+  color: #6c757d; /* Change text color on hover */
 }
 
 .blog-item .btn-primary {
