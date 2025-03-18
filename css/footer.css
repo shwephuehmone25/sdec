@@ -1,0 +1,28 @@
+/*** Footer Start ***/
+.footer {
+    background: linear-gradient(rgba(128, 203, 196, 0.1), rgba(232, 243, 241, 1)), url(../images/sdecbg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .footer-galary-img img {
+    width: 100%;
+    border-style: dotted; 
+    border-color: var(--bs-primary);
+    transition: 0.5s;
+}
+
+.footer .footer-galary-img img:hover {
+    transform: scale(1.2);
+}
+
+.footer-item a.text-body:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-text
+{
+    color: #6c757d !important;
+}
+/*** Footer End ***/

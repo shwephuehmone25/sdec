@@ -1,0 +1,84 @@
+/* Section Styling */
+.meetings-page {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Headings */
+h4 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004D40; /* Darker Teal */
+}
+
+/* Vision & Mission */
+.vision-text,
+.aims-footer {
+    background: #B2DFDB; /* Softer Teal */
+    padding: 15px;
+    border-left: 5px solid #00796B; /* Strong Teal */
+    font-style: italic;
+}
+
+/* Numbered Lists */
+.list-group-numbered {
+    padding-left: 20px;
+}
+
+/* Aims Section */
+.aims-section {
+    background: #80CBC4; /* Matching theme */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.aims-heading {
+    font-size: 24px;
+    color: #004D40; /* Dark Teal */
+}
+
+.aims-list {
+    counter-reset: aims-counter;
+    padding-left: 0;
+}
+
+.aims-list li {
+    list-style: none;
+    font-size: 18px;
+    padding: 10px;
+    background: #E0F2F1; /* Light Teal */
+    margin: 10px 0;
+    border-left: 5px solid #004D40; /* Strong Contrast */
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.aims-list li::before {
+    counter-increment: aims-counter;
+    content: counter(aims-counter) ". ";
+    font-weight: bold;
+    color: #004D40;
+}
+
+.aims-list li:hover {
+    background: #A7FFEB; /* Lighter Accent */
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-lg-4, .col-lg-8 {
+        width: 100%;
+        text-align: center;
+    }
+}
